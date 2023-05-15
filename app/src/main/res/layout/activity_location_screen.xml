@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".LocationScreen">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar" />
+
+    <TextView
+        android:id="@+id/select_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300dp"
+        android:text="Select your City \n And Explore nearby circles"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/black"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/manual_location"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/select_location"
+        android:text="select location manually "
+        android:textColor="@color/white"
+        android:background="@drawable/button"
+        android:layout_marginTop="200dp"
+        android:layout_centerHorizontal="true"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/auto_location"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/manual_location"
+        android:text="Search by location"
+        android:textColor="@color/white"
+        android:background="@drawable/button2"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
